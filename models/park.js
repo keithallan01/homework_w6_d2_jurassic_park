@@ -12,4 +12,8 @@ Park.prototype.removeDinosaur = function (dinosaur) {
   this.collectionOfDinosaurs.pop(dinosaur)
 };
 
+Park.prototype.findMostPopularDinosaur = function (dinosaur) {
+  this.collectionOfDinosaurs.splice(dinosaur)
+};
+
 module.exports = Park;

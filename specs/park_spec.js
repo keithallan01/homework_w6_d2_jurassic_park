@@ -39,11 +39,14 @@ let park;
   it('should be able to remove a dinosaur from its collection', function(){
     park.removeDinosaur('diplodocus')
     const actual = park.collectionOfDinosaurs.length
-    assert.strictEqual(actual, 2)
+    assert.strictEqual(actual, 2);
   });
 
-  it('should be able to find the dinosaur that attracts the most visitors');
-
+  it('should be able to find the dinosaur that attracts the most visitors', function (){
+    park.findMostPopularDinosaur('veloceraptor')
+    const actual = dinosaur.species.find
+    assert.strictEqual(actual, 'veloceraptor')
+  });
   it('should be able to find all dinosaurs of a particular species');
 
   it('should be able to remove all dinosaurs of a particular species');
